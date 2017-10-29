@@ -76,7 +76,9 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
     holiday.each do |name, value|
       if value == "BBQ"
-        puts "#{holiday}"
+        value.each do |holiday|
+          puts "#{holiday}"
+        end
       end
     end
   end
